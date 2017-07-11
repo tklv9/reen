@@ -20,59 +20,71 @@
 .address-size {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+
 }
 
-.mail-tel, .sns-icn {
+.mail-tel {
   display: flex;
   align-items: center;
 }
 
-.adress-list:hover {
-  color: #00bc9c;
-}
+.address-list { font-size: 12px; }
+
+.address-list:hover { color: #00bc9c; }
+
+.address-mail { margin-left: 17px; }
+
+.address-tel { margin-left: 26px; }
 
 .trans-h-mail:hovor {
-  background-color: : #00bc9c;
+  background-color: #00bc9c;
   background-image: url("../img/header/icon-mail-off.png") no-repeat;
 }
 
-.adress-list { padding: 0 20px 0 0; }
+.adress-list { padding-right: 26px; }
+
+.sns-icn li{
+  display: inline-block;
+}
+
+.nav-icn-list { padding: 0 13px 0; }
+
+.nav-icn-list:hovor img{ visibility:hidden; }
+
+.nav-fb:hovor {
+  background-color: #4668b3;
+  background-image: url("../img/header/icon-facebook-on.png") no-repeat;
+}
+
+.nav-gg:hover {
+  background-color: #de5745;
+  background-image: url("../img/header/icon-google-on.png") no-repeat;
+}
+
+.nav-tw:hover {
+  background-color: #2fbbed;
+  background-image: url("../img/header/icon-twitter-on.png") no-repeat;
+}
+
+.nav-pr:hover {
+  background-color: #d94348;
+  background-image: url("../img/header/icon-pinterest-on.png") no-repeat;
+}
+
+.nav-bh:hover {
+  background-color: #3079ff;
+  background-image: url("../img/header/icon-behance-on.png") no-repeat;
+}
+
+.nav-dr:hover {
+  background-color: #eb6397;
+  background-image: url("../img/header/icon-dribbble-on.png") no-repeat;
+}
 
 .nav-wrapper {
   display: flex;
   align-items: center;
   height: 120px;
-}
-
-.nav-fb:hovor {
-  background-color: #4668b3;
-  background-image: url("../img/header/icon-facebook-on.png");
-}
-
-.nav-gg:hover {
-  background-color: #de5745;
-  background-image: url("../img/header/icon-google-on.png");
-}
-
-.nav-tw:hover {
-  background-color: #2fbbed;
-  background-image: url("../img/header/icon-twitter-on.png");
-}
-
-.nav-pr:hover {
-  background-color: #d94348;
-  background-image: url("../img/header/icon-pinterest-on.png");
-}
-
-.nav-bh:hover {
-  background-color: #3079ff;
-  background-image: url("../img/header/icon-behance-on.png");
-}
-
-.nav-dr:hover {
-  background-color: #eb6397;
-  background-image: url("../img/header/icon-dribbble-on.png");
 }
 
 .opacity:hover {
@@ -96,7 +108,7 @@
   color: #00bc9c;
 }
 
-.nav-list { padding: 0 44px 0 0; }
+.nav-list { padding-right:44px; }
 
 .bc-img {
   position: relative;
@@ -205,7 +217,7 @@ main { text-align: center; }
 
 .works-main-wrapper { margin-top: 80px; }
 
-.works-position { padding-right: 30px; }
+.works-position { margin-right: 30px; }
 
 .works-opacity:hovor {
   opacity: 0.9;
@@ -268,6 +280,15 @@ main { text-align: center; }
   background-color: #00bc9c;
   box-shadow: 0 4px #00a085;
   cursor: pointer;
+  outline: none;
+}
+
+.figure-btn:active {
+  box-shadow: none;
+  margin-bottom: -3px;
+  margin-top: 53px;
+  height: 50px;
+  transition: .3s;
 }
 
 .footer-wrapper {

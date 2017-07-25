@@ -12,6 +12,12 @@
   overflow: hidden;
 }
 
+.header-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
 .header-container, .nav-wrapper, .keyvisual-container, .logo-txt1, article, .section-wrapper {
   margin: 0 auto;
   max-width: 1170px;
